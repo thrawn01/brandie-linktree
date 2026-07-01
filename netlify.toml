@@ -1,0 +1,16 @@
+# Netlify config for a single-page static site.
+# No build step — Netlify just publishes the files as-is.
+
+[build]
+  publish = "."
+
+# Send visitors to your links page as the site root.
+# (index.html is served automatically, so no redirect is strictly needed,
+#  but this keeps things explicit.)
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
