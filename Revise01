@@ -1,0 +1,1 @@
+cd ~/Documents/brandie-linktree && git init -b main && git remote add origin git@github.com:thrawn01/brandie-linktree.git && git fetch origin && git reset origin/main && git add -A && git commit -m "Add GoodNews Paper Co section; remove Etsy and Big Cartel" && git push origin main
